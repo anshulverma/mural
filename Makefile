@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -Wall -03
+CFLAGS = -Wall -O3
 
 UNAME := $(shell uname)
 ifeq ($(UNAME), Darwin)
@@ -10,5 +10,3 @@ endif
 
 mural_server: *.cpp *.h
 	$(CC) $(CFLAGS) *.cpp -o mural_server
-
-
